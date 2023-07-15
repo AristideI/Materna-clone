@@ -38,7 +38,8 @@
 
 <body>
     <header class="relative">
-        <article class="bg-teal-50 flex justify-end items-center gap-6 px-[10%] absolute top-0 left-0 right-0 py-2">
+        <article
+            class="bg-teal-50 flex justify-end items-center gap-6 px-[10%] absolute top-0 left-0 right-0 py-2 sm:hidden">
             <a class="px-6 border-r-[1px]" href="#">News</a>
             <a class="pr-6 border-r-[1px]" href="#">Contact</a>
             <div class="flex justify-between items-center">
@@ -47,7 +48,8 @@
             </div>
         </article>
 
-        <article class="mx-[10%] flex justify-between items-center text-white z-10 absolute top-0 left-0 right-0">
+        <article
+            class="mx-[10%] flex justify-between items-center text-white z-10 absolute top-0 left-0 right-0 sm:hidden">
             <img class="w-52 h-auto object-contain" src="img/logo-small.svg" alt="">
             <section class="bg-mainred flex justify-between items-center w-4/5 py-4 px-8">
                 <div class="flex gap-6 font-medium text-xl">
@@ -62,31 +64,48 @@
 
             </section>
         </article>
+
+        <article class="hidden md:flex bg-mainred text-white items-center py-4 gap-6 text-lg px-4">
+            <p>Menu</p>
+            <div class="flex items-center gap-4">
+                <img src="img/loupe-w.svg" alt="">
+                <p>Search</p>
+            </div>
+
+        </article>
     </header>
 
 
     <main>
-        <article class="w-full -z-20 bg-cover bg-center bg-no-repeat pt-60 pb-20 text-white flex px-[10%] gap-8"
+        <article
+            class="w-full -z-20 bg-cover bg-center bg-no-repeat pt-60 pb-20 text-white flex px-[10%] gap-8 relative sm:px-4 sm:pt-36 md:flex-col"
             style="background-image: url(img/buehne_startseite.svg);">
-            <section class="border-4 p-12 border-mainred w-2/5 flex flex-col gap-8">
+            <img class="absolute w-28 hidden sm:block top-3 left-3" src="img/logo-small.svg" alt="">
+            <section class="border-4 p-12 border-mainred w-2/5 flex flex-col gap-8 md:w-full md:p-4 md:py-7">
                 <p class="text-5xl">We are Digitizing Your World.</p>
                 <p class="text-lg">As key globally active IT service provider, we advise and assist you in all aspects
                     of digitization
                     and provide tailor-made tecchnologies for agile, flexible and secure IT.</p>
             </section>
 
-            <section class="w-3/5 flex justify-between gap-4">
-                <div class="w-1/3 h-1/2 bg-cover flex items-end border-white border-4"
+            <section class="w-3/5 flex justify-between gap-4 md:w-full md:flex-col">
+                <div class="w-1/3 h-1/2 bg-cover flex items-end border-white border-4 md:border-none md:w-full"
                     style="background-image: url(img/M-Startseite-Quadrat-Portfolio.jpg);">
-                    <p class="w-full text-center py-1 font-medium bg-mainred">Portfolio</p>
+                    <p class="w-full text-center py-1 font-medium bg-mainred md:py-6 md:text-xl md:text-left md:pl-10">
+                        Portfolio
+                    </p>
                 </div>
-                <div class="w-1/3 h-1/2 bg-cover flex items-end border-white border-4"
+                <div class="w-1/3 h-1/2 bg-cover flex items-end border-white border-4 md:border-none md:w-full"
                     style="background-image: url(img/M-Startseite-Quadrat-Unternehmen.jpg);">
-                    <p class="w-full text-center py-1 font-medium bg-mainred">Portfolio</p>
+                    <p class="w-full text-center py-1 font-medium bg-mainred md:py-6 md:text-xl md:text-left md:pl-10">
+                        Portfolio
+                    </p>
                 </div>
-                <div class="w-1/3 h-1/2 bg-cover flex items-end border-white border-4"
+                <div class="w-1/3 h-1/2 bg-cover flex items-end border-white border-4 md:border-none md:w-full"
                     style="background-image: url(img/M-Startseite-Quadrat-Karriere.jpg);">
-                    <p class="w-full text-center py-1 font-medium bg-mainred">Portfolio</p>
+                    <p class="w-full text-center py-1 font-medium bg-mainred md:py-6 md:text-xl md:text-left md:pl-10">
+                        Portfolio
+                    </p>
                 </div>
 
             </section>
@@ -96,7 +115,7 @@
         <section class="text-center text-3xl py-8">Learn more About our portfolio</section>
 
 
-        <article class="grid grid-cols-4 mx-[10%] gap-4">
+        <article class="grid grid-cols-4 mx-[10%] gap-4 md:grid-cols-2 sm:grid-cols-1">
             <section class="bg-slate-200">
                 <img class="" src="img/AS-388785133-Home-Portfolio-Cloud.png" alt="">
                 <div class="w-full px-6 flex flex-col items-start text-lg gap-2 py-6">
@@ -104,7 +123,7 @@
                     <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel soluta, rem
                         explicabo odio ab
                         corporis eos ad iste assumenda</p>
-                    <button class="self-end bg-mainred text-white px-6 rounded-lg">More</button>
+                    <button class="self-end bg-mainred text-white px-6 rounded-lg md:w-full md:py-2">More</button>
                 </div>
             </section>
             <section class="bg-slate-200">
@@ -114,7 +133,7 @@
                     <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel soluta, rem
                         explicabo odio ab
                         corporis eos ad iste assumenda</p>
-                    <button class="self-end bg-mainred text-white px-6 rounded-lg">More</button>
+                    <button class="self-end bg-mainred text-white px-6 rounded-lg md:w-full md:py-2">More</button>
                 </div>
             </section>
             <section class="bg-slate-200">
@@ -124,7 +143,7 @@
                     <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel soluta, rem
                         explicabo odio ab
                         corporis eos ad iste assumenda</p>
-                    <button class="self-end bg-mainred text-white px-6 rounded-lg">More</button>
+                    <button class="self-end bg-mainred text-white px-6 rounded-lg md:w-full md:py-2">More</button>
                 </div>
             </section>
             <section class="bg-slate-200">
@@ -134,22 +153,22 @@
                     <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel soluta, rem
                         explicabo odio ab
                         corporis eos ad iste assumenda</p>
-                    <button class="self-end bg-mainred text-white px-6 rounded-lg">More</button>
+                    <button class="self-end bg-mainred text-white px-6 rounded-lg md:w-full md:py-2">More</button>
                 </div>
             </section>
         </article>
 
         <article class="bg-slate-200 px-[10%] py-12 mt-12">
-            <article class="bg-white flex justify-between items-center gap-6 pr-6">
-                <img src="img/E-Portfolio-Lsg-ESM-ISG-Cover.png" alt="">
-                <div class="flex flex-col gap-4 justify-center items-start">
+            <article class="bg-white flex justify-between items-center gap-6 pr-6 md:flex-col md:pr-0">
+                <img class="md:w-full" src="img/E-Portfolio-Lsg-ESM-ISG-Cover.png" alt="">
+                <div class="flex flex-col gap-4 justify-center items-start md:px-6 pb-10">
                     <p class="text-3xl text-mainred">Top Position in ESM Report</p>
                     <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
                         assumenda
                         totam rerum quos
                         provident suscipit non, corrupti velit, sunt labore quisquam similique ab dolores et accusantium
                         architecto? Quaerat, aperiam nisi?</p>
-                    <button class="self-end border-2 border-mainred px-6 py-1">Read more</button>
+                    <button class="self-end border-2 border-mainred px-6 py-1 md:w-full">Read more</button>
                 </div>
             </article>
 
@@ -158,9 +177,9 @@
 
 
             <article class="flex flex-col gap-8">
-                <article class="bg-white flex justify-between items-center gap-6 pr-6">
+                <article class="bg-white flex justify-between items-center gap-6 pr-6 md:flex-col md:pr-0 ">
                     <img src="img/M-Flughafen-Denver-SBD.png" alt="">
-                    <div class="flex flex-col gap-4 justify-center items-start">
+                    <div class="flex flex-col gap-4 justify-center items-start md:px-6 md:pb-8">
                         <p class="text-3xl text-mainred">Top Position in ESM Report</p>
                         <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
                             assumenda
@@ -168,11 +187,11 @@
                             provident suscipit non, corrupti velit, sunt labore quisquam similique ab dolores et
                             accusantium
                             architecto? Quaerat, aperiam nisi?</p>
-                        <button class="self-end border-2 border-mainred px-6 py-1">Read more</button>
+                        <button class="self-end border-2 border-mainred px-6 py-1 md:w-full">Read more</button>
                     </div>
                 </article>
 
-                <section class="grid grid-cols-4 ">
+                <section class="grid grid-cols-4 md:hidden">
                     <img class=" object-cover" src="img/M-Flughafen-Denver-SBD.png" alt="">
                     <img class="object-cover" src="img/vw-financial-service.jpg" alt="">
                     <img class="object-cover" src="img/AS-130417189_206837819.jpg" alt="">
